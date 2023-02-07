@@ -1,0 +1,18 @@
+<header class="c-header">
+  <div class="l-container">
+    <div class="c-header__wrapper">
+      <div class="c-header__logo"><a href="./"><img src="./assets/img/logo.png" alt="和奏"></a></div>
+      <nav class="c-gnav__wrapper">
+        <ul class="c-gnav">
+          <% if (typeof linklists != 'undefined') { %>
+            <% linklists.main && linklists.main.forEach(link => { %>
+              <li class="c-gnav__item">
+                <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
+              </li>
+            <% }) %>
+          <% } %>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

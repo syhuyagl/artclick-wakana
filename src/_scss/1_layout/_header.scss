@@ -1,0 +1,35 @@
+/* Header
+------------------------------------------------------------*/
+.c-header {
+    .c-header__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 14px 15px 9px;
+    }
+
+    .c-gnav {
+        display: flex;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #333;
+        justify-content: space-between;
+        width: 100%;
+        font-feature-settings: "palt" 1;
+    }
+
+    .c-gnav__wrapper {
+        display: flex;
+        margin-bottom: 4px;
+        margin-right: 6px;
+        justify-content: space-between;
+        width: 53.1%;
+    }
+
+    .c-gnav__item {
+        margin-top: auto;
+
+        &:last-child {
+            font-feature-settings: normal;
+        }
+    }
+}

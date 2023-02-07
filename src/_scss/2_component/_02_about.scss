@@ -1,0 +1,82 @@
+/*------------------------------------------------------------
+title
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-about {
+  padding: 63px 0;
+  .c-about__title {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+  }
+  .c-about__products {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  .c-about__product {
+    width: 48.2%;
+    &:last-child {
+      padding-left: 1px;
+    }
+  }
+  .c-about__prepare {
+    margin-top: 65px;
+  }
+  .c-about__fabrics {
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .c-about__fabric {
+    &:last-child {
+      padding-right: 7px;
+    }
+  }
+  .c-about__fabricimg {
+    border-radius: 13px;
+  }
+  .c-about__fabricname {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #333;
+    padding-top: 4px;
+  }
+  .c-about__usableiki {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 43px;
+    padding: 4px 0;
+    max-width: 700px;
+    background-image: url("../../assets/img/bg-purple.jpg");
+    background-size: cover;
+  }
+  .c-about__notice {
+    color: #d15354;
+    font-size: 2.3rem;
+    font-weight: 700;
+    padding-top: 32px;
+    font-feature-settings: "palt" 1;
+    letter-spacing: 1.3px;
+  }
+  .c-about__text {
+    color: #333;
+    font-size: 2.3rem;
+    font-weight: 700;
+    padding-top: 10px;
+    line-height: 1.81;
+    font-feature-settings: "palt" 1;
+    letter-spacing: 1.1px;
+  }
+  .c-about__request{
+    line-height: 1;
+    padding-top: 15px;
+    letter-spacing: 1.8px;
+}
+}

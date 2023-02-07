@@ -1,0 +1,27 @@
+/* layout
+------------------------------------------------------------*/
+body {
+    font-family: $main-fonts;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    @include sp {
+        min-width: 320px;
+    }
+}
+
+.l-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.l-container--1000{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+.l-container--708{
+    max-width: 708px;
+    width: 100%;
+    margin: 0 auto;
+}
+
