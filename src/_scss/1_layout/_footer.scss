@@ -5,11 +5,20 @@ footer
   .c-footer__banner {
     margin-top: 100px;
     display: block;
+    @include tab {
+      margin-top: 37px;
+    }
   }
   .c-footer__logo {
     text-align: center;
     margin-top: 48px;
     display: block;
+    @include tab {
+      margin-top: 33px;
+      img {
+        width: 183px;
+      }
+    }
   }
   .c-footer__copyright {
     text-align: center;
@@ -18,5 +27,14 @@ footer
     color: #333;
     letter-spacing: 0.3px;
     margin-top: 14px;
+    @include tab {
+      font-size: 0.6rem;
+      margin-top: 7px;
+      padding-bottom: 50px;
+    }
   }
+}
+.c-footer__link {
+  position: fixed;
+  bottom: 0;
 }

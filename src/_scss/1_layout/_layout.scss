@@ -18,6 +18,9 @@ body {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+  @include tab {
+    padding: 0 13px;
+  }
 }
 .l-container--700 {
   max-width: 700px;
@@ -30,4 +33,40 @@ body {
   width: 50px;
   bottom: 35px;
   right: 35px;
+  @include sp {
+    position: fixed;
+    width: 50px;
+    bottom: 6%;
+    right: 0px;
+  }
+}
+.is-sp{
+    display: none;
+    @include sp{
+        display: block;
+    }
+}
+.is-tab{
+    display: none;
+    @include tab{
+        display: block;
+    }
+}
+.is-pc{
+    display: block;
+    @include tab{
+        display: none;
+    }
+}
+.is-inlineblock{
+    display: inline-block;
+    @include tab{
+        display: none;
+    }
+}
+.is-shownav{
+    display: flex;
+    @include tab{
+        display: none !important;
+    }
 }

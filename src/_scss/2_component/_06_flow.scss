@@ -5,16 +5,25 @@ navi
 /*
 ------------------------------------------------------------*/
 .c-flow {
-	.c-flow__title {
-        text-align: center;
-        font-size: 5rem;
-        color: #333;
-        font-weight: 700;
-        padding-top: 80px;
-       
-      }
-      .c-flow__content{
-        margin-top: 31px;
+  .c-flow__title {
+    text-align: center;
+    font-size: 5rem;
+    color: #333;
+    font-weight: 700;
+    padding-top: 80px;
+    @include tab {
+      font-size: 2rem;
+      padding-top: 44px;
+    }
+  }
+  .c-flow__content {
+    margin-top: 31px;
     margin-bottom: 95px;
-      }
+    @include tab {
+        
+        margin-top: 20px;
+        margin-bottom: 45px;
+        padding: 0 13px;
+    }
+  }
 }

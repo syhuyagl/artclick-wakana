@@ -13,6 +13,9 @@ form
 .c-bag {
   .c-bag__banner {
     padding-top: 100px;
+    @include tab {
+      padding-top: 48px;
+    }
   }
   .c-bag__title {
     text-align: center;
@@ -21,12 +24,23 @@ form
     font-weight: 700;
     padding-top: 84px;
     font-feature-settings: "palt" 1;
+    @include tab {
+      font-size: 2rem;
+      padding-top: 44px;
+    }
   }
   .c-bag__bagsize {
     padding-top: 41px;
+    @include tab {
+      padding-top: 19px;
+    }
   }
   .c-bag__about {
     padding-top: 31px;
     margin-bottom: 96px;
+    @include tab {
+      padding: 34px 13px 0;
+      margin-bottom: 43px;
+    }
   }
 }

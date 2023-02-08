@@ -5,25 +5,25 @@ btn
 /*
 ------------------------------------------------------------*/
 .c-mainvisual {
-    height: 648px;
+  width: 100%;
+  .c-mainvisual__title {
+    text-indent: -9999px;
+    position: absolute;
+  }
+  .c-mainvisual__bg {
     width: 100%;
-    .c-mainvisual__bg{
-        background-image: url("../../assets/img/mv_obi_remake.jpg");
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-        text-align: right;
-    }
-    .c-mainvisual__link{
-        font-size: 2rem;
-        font-weight: 700;
-        color: #fff;
-        writing-mode: vertical-lr;
-        text-align: right;
-        display: inline-block;
-        background: #514977;
-        letter-spacing: 2.6px;
-        padding: 23px 15px 12px;
-
-    }
+  }
+}
+.c-mainvisual__link {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  writing-mode: vertical-lr;
+  text-align: right;
+  background: #514977;
+  letter-spacing: 2.6px;
+  padding: 23px 15px 23px;
+  position: fixed;
+  top: 92px;
+    right: 0;
 }

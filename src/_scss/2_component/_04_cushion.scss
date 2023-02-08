@@ -7,19 +7,35 @@ form
 .c-cushion {
   .c-cushion__banner {
     padding-top: 35px;
+    @include tab {
+        padding-top: 13px;
+    }
   }
   .c-cushion__title {
     text-align: center;
     font-size: 5rem;
     color: #333;
-    font-weight: 700;padding-top: 85px;
+    font-weight: 700;
+    padding-top: 85px;
     font-feature-settings: "palt" 1;
+    @include tab {
+      font-size: 2rem;
+      padding-top: 36px;
+    }
   }
   .c-cushion__cushionsize {
     padding-top: 36px;
+    @include tab {
+        padding-top: 20px;
+
+    }
   }
-  .c-cushion__about{
+  .c-cushion__about {
     padding-top: 31px;
     margin-bottom: 96px;
+    @include tab {
+        margin-bottom: 45px;
+        padding: 21px 13px 0;
+    }
   }
 }

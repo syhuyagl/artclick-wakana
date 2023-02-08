@@ -2,16 +2,32 @@
   <div class="l-container">
     <div class="c-header__wrapper">
       <div class="c-header__logo"><a href="./"><img src="./assets/img/logo.png" alt="和奏"></a></div>
-      <nav class="c-gnav__wrapper">
-        <ul class="c-gnav">
-          <% if (typeof linklists != 'undefined') { %>
-            <% linklists.main && linklists.main.forEach(link => { %>
-              <li class="c-gnav__item" id="<%= link.id %>">
-                <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
-              </li>
-            <% }) %>
-          <% } %>
-        </ul>
+      <nav class="c-gnav__wrapper is-shownav">
+          <ul class="c-gnav">
+            <% if (typeof linklists != 'undefined') { %>
+              <% linklists.main && linklists.main.forEach(link => { %>
+                <li class="c-gnav__item" data-link="<%= link.id %>">
+                  <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
+                </li>
+              <% }) %>
+            <% } %>
+          </ul>
+      </nav>
+      <div class="c-header__menu is-tab">
+        <img src="./assets/img/menu.svg" alt="和奏">
+      </div>
+      <nav class="is-tab">
+        <div class="c-header__spnav">
+          <ul class="c-gnav">
+            <% if (typeof linklists != 'undefined') { %>
+              <% linklists.main && linklists.main.forEach(link => { %>
+                <li class="c-gnav__item" data-link="<%= link.id %>">
+                  <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
+                </li>
+              <% }) %>
+            <% } %>
+          </ul>
+        </div>
       </nav>
     </div>
   </div>

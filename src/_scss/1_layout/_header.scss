@@ -1,35 +1,71 @@
 /* Header
 ------------------------------------------------------------*/
 .c-header {
-    .c-header__wrapper {
-        display: flex;
-        justify-content: space-between;
-        padding: 14px 15px 9px;
+  .c-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 15px 9px;
+    @include tab {
+      padding: 4px 7px 2px;
     }
+  }
 
-    .c-gnav {
-        display: flex;
-        font-size: 1.6rem;
-        font-weight: 700;
-        color: #333;
-        justify-content: space-between;
-        width: 100%;
-        font-feature-settings: "palt" 1;
+  .c-gnav {
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #333;
+    justify-content: space-between;
+    width: 100%;
+    font-feature-settings: "palt" 1;
+    @include tab {
+        flex-direction: column;
+        text-align: center;
     }
-
-    .c-gnav__wrapper {
-        display: flex;
-        margin-bottom: 4px;
-        margin-right: 6px;
-        justify-content: space-between;
-        width: 53.1%;
+  }
+  .c-header__logo {
+    @include tab {
+      width: 180px;
     }
-
-    .c-gnav__item {
-        margin-top: auto;
-
-        &:last-child {
-            font-feature-settings: normal;
-        }
+  }
+  .c-gnav__wrapper {
+    display: flex;
+    margin-bottom: 4px;
+    margin-right: 6px;
+    justify-content: space-between;
+    width: 53.1%;
+    @include sp {
+        justify-content: baseline;
     }
+  }
+
+  .c-gnav__item {
+    margin-top: auto;
+
+    &:last-child {
+      font-feature-settings: normal;
+    }
+    @include tab {
+        padding: 25px 0px;
+    }
+  }
+  .c-header__menu{
+    width: 25px;
+    padding-top: 7px;
+    margin-left: auto;
+  }
+  .c-header__spnav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    background: #fff;
+    z-index: 2;
+    display: none;
+  }
+  .c-header__spnav--active{
+    display: block;
+  }
 }
