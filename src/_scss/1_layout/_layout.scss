@@ -33,6 +33,7 @@ body {
   width: 50px;
   bottom: 35px;
   right: 35px;
+  z-index: 9999;
   @include sp {
     position: fixed;
     width: 50px;
@@ -69,4 +70,7 @@ body {
     @include tab{
         display: none !important;
     }
+}
+.is-hidden{
+    display: none;
 }

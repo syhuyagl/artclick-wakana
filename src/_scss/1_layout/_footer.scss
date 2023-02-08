@@ -26,15 +26,34 @@ footer
     font-weight: 400;
     color: #333;
     letter-spacing: 0.3px;
-    margin-top: 14px;
+    margin-top: 14px; padding-bottom: 50px;
     @include tab {
       font-size: 0.6rem;
       margin-top: 7px;
-      padding-bottom: 50px;
     }
   }
 }
 .c-footer__link {
   position: fixed;
   bottom: 0;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  background: #514977;
+  width: 100%;
+  padding: 9px 0;
+  display: inline-block;
+  &::after{
+    content: "";
+    background: url('../../assets/img/arrow-right.svg');
+    width: 21px;
+    height: 12px;
+    display: block;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    bottom: 14px;
+  }
 }
