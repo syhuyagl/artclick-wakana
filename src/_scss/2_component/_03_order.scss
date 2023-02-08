@@ -1,0 +1,20 @@
+/*------------------------------------------------------------
+icon
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-order {
+  background: url("../assets/img/bg_1.jpg");
+  background-repeat: repeat;
+  background-size: auto;
+  .c-order__orderlink {
+    width: 50%;
+    max-width: 480px;
+    padding: 70px 0 65px;
+  }
+  .c-order__wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+}

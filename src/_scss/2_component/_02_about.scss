@@ -74,9 +74,23 @@ title
     font-feature-settings: "palt" 1;
     letter-spacing: 1.1px;
   }
-  .c-about__request{
-    line-height: 1;
-    padding-top: 15px;
-    letter-spacing: 1.8px;
-}
+  .c-about__content{
+    margin-top: 42px;
+  }
+  .c-about__bags {
+    display: flex;
+    max-width: 1000px;
+    margin: 102px auto 96px;
+    justify-content: space-between;
+  }
+  .c-about__bag {
+    display: block;
+    width: 50%;
+    img {
+      max-width: 480px;
+    }
+    &:last-child {
+      text-align: right;
+    }
+  }
 }
