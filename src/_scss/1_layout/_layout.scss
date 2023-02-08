@@ -1,27 +1,33 @@
 /* layout
 ------------------------------------------------------------*/
 body {
-    font-family: $main-fonts;
-    font-size: 1.4rem;
-    line-height: 1.5;
-    @include sp {
-        min-width: 320px;
-    }
+  font-family: $main-fonts;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  @include sp {
+    min-width: 320px;
+  }
 }
 
 .l-container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
-.l-container--1000{
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
+.l-container--1000 {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
 }
-.l-container--700{
-    max-width: 700px;
-    width: 100%;
-    margin: 0 auto;
+.l-container--700 {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
 }
 
+.c-top {
+  position: fixed;
+  width: 50px;
+  bottom: 35px;
+  right: 35px;
+}
