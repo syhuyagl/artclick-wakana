@@ -71,4 +71,13 @@ $(document).ready(function () {
       }
     });
   });
+  $(".c-about__bag").click(function () {
+    var href = $(this).attr("href");
+      $("html, body").animate(
+        {
+          scrollTop: $(href).offset().top,
+        },
+        "300"
+      );
+  })
 });
